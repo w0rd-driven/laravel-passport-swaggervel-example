@@ -27,7 +27,7 @@ return [
       | Use secure protocol (http vs. https).
       |--------------------------------------------------------------------------
      */
-    'secure-protocol' => false,
+    'secure-protocol' => true,
 
     /*
       |--------------------------------------------------------------------------
@@ -81,21 +81,21 @@ return [
       | You can configure OAuth2 authorization by changing value to true
       |--------------------------------------------------------------------------
     */
-    'init-o-auth' => false,
+    'init-o-auth' => true,
 
     /*
       |--------------------------------------------------------------------------
       | Default clientId. MUST be a string
       |--------------------------------------------------------------------------
     */
-    'client-id' => 'client_id',
+    'client-id' => '3',
 
     /*
       |--------------------------------------------------------------------------
       | Default clientSecret. MUST be a string
       |--------------------------------------------------------------------------
     */
-    'client-secret' => 'client_secret',
+    'client-secret' => 'MwgtELIvXCRSKbOjhNwQomaknvmC3EUw20VLWe3Y',
 
     /*
       |--------------------------------------------------------------------------
@@ -110,7 +110,7 @@ return [
       | Application name, displayed in authorization popup. MUST be a string
       |--------------------------------------------------------------------------
     */
-    'app-name' => 'swaggervel',
+    'app-name' => 'Swagger',
 
     /*
       |--------------------------------------------------------------------------
