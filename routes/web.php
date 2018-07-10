@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index')->name('welcome.view');
+Route::get('/', 'WelcomeController@index')->name('welcome');
+
+Auth::routes();
