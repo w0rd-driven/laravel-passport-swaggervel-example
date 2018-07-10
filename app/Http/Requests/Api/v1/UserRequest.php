@@ -4,6 +4,32 @@ namespace App\Http\Requests\Api\v1;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * @SWG\Definition(
+ *   title="UserRequest",
+ *   required={"name", "email", "password"},
+ *   @SWG\Property(
+ *     title="id",
+ *     property="id",
+ *     type="integer",
+ *   ),
+ *   @SWG\Property(
+ *     title="Name",
+ *     property="name",
+ *     type="string",
+ *   ),
+ *   @SWG\Property(
+ *     title="Email",
+ *     property="email",
+ *     type="string",
+ *   ),
+ *   @SWG\Property(
+ *     title="Password",
+ *     property="password",
+ *     type="string",
+ *   ),
+ * )
+ */
 class UserRequest extends FormRequest
 {
     protected static $TABLENAME = 'users';
