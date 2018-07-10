@@ -74,6 +74,7 @@
         // Build a system
         const ui = SwaggerUIBundle({
             url: '{{ $host . $urlToDocs }}',
+            oauth2RedirectUrl: '/vendor/swaggervel/oauth2-redirect.html',
             dom_id: '#swagger-ui',
             deepLinking: true,
             presets: [
@@ -83,7 +84,11 @@
             plugins: [
                 SwaggerUIBundle.plugins.DownloadUrl
             ],
-            layout: "StandaloneLayout"
+            layout: "StandaloneLayout",
+            tagsSorter: 'alpha',
+            operationsSorter: 'alpha',
+            docExpansion: 'list',
+            filter: true
         });
 
         @if ($initOAuth)
