@@ -88,14 +88,14 @@ return [
       | Default clientId. MUST be a string
       |--------------------------------------------------------------------------
     */
-    'client-id' => '3',
+    'client-id' => env('SWAGGER_CLIENT_ID'),
 
     /*
       |--------------------------------------------------------------------------
       | Default clientSecret. MUST be a string
       |--------------------------------------------------------------------------
     */
-    'client-secret' => 'MwgtELIvXCRSKbOjhNwQomaknvmC3EUw20VLWe3Y',
+    'client-secret' => env('SWAGGER_CLIENT_SECRET'),
 
     /*
       |--------------------------------------------------------------------------
